@@ -1,7 +1,7 @@
 package se2627;
 public class HRCalculator {
     public static int calculateMaxHR(int age) {
-        if (age > 120) {
+        if (age > 120 || age < 0) {
             throw new IllegalArgumentException("Age out of bounds");
         }
         return 220 - age;
